@@ -22,6 +22,14 @@ STATICFILES_FINDERS = (
 )
 
 PIPELINE = {
+    'JAVASCRIPT': {
+        'posts': {
+            'source_filenames': (
+              'js/posts.js',
+            ),
+            'output_filename': 'js/posts.css',
+        }
+    },
     'STYLESHEETS': {
         'fastube': {
             'source_filenames': (
