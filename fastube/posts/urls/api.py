@@ -4,4 +4,5 @@ from posts.api import *
 
 urlpatterns = [
     url(r'^$', PostListAPIView.as_view(), name="api"),
+    url(r'^post/(?P<slug>\w+)/$', PostCommentListAPIView.as_view(), name="api"),
 ]
