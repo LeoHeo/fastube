@@ -27,7 +27,7 @@ PIPELINE = {
             'source_filenames': (
               'js/posts.js',
             ),
-            'output_filename': 'js/posts.css',
+            'output_filename': 'js/posts.js',
         }
     },
     'STYLESHEETS': {
