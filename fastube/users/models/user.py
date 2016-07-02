@@ -11,5 +11,15 @@ class User(AbstractUser):
         null=True,
     )
 
+    # from(followee) => to(follower)
+
+    follower_set = models.ManyToManyField(
+        "self",
+        symmetrical=False,
+        through="Follow",
+        through_fields=("followee", "follower"),
+        related_name="followee_set",
+    )
+
     def get_absolute_url(self):
         return reverse("home")
