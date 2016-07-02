@@ -9,7 +9,7 @@
     <p>{{ post.content }}</p>
 </section>
 
-<section id="comments-section">
+<section id="comments-section" data-post-slug="{{ post.hash_id }}">
     <h3>Comment (<span id="comments-count">{{ post.comment_set.count }}</span>)</h3>
 
     <ul>
