@@ -5,7 +5,9 @@ echo 'eval "$(pyenv init -)"' >> .bash_profile
 echo 'eval "$(pyenv virtualenv-init -)"' >> .bash_profile
 
 pyenv install 3.5.1
+pyenv uninstall fastube
 pyenv virtualenv 3.5.1 fastube
 rm -rf /home/ubuntu/fastube
 mkdir /home/ubuntu/fastube
 sudo cp ~/.env /home/ubuntu/fastube/.env
+pyenv activate fastube
