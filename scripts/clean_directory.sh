@@ -1,7 +1,7 @@
-cp .env ~/.env
+source /home/ubuntu/.bash_profile
+cp /home/ubuntu/fastube/.env ~/.env
 pyenv virtualenv 3.5.1 fastube
-pyenv activate fastube
 rm -rf /home/ubuntu/fastube
 mkdir /home/ubuntu/fastube
-mv .env /home/ubuntu/fastube/.env
+mv ~/.env /home/ubuntu/fastube/.env
 echo y | command 
