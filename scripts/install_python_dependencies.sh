@@ -1,5 +1,5 @@
 sudo service nginx stop
 
 cd /home/ubuntu/fastube
-echo y | command 
+pyenv activate fastube
 pip install -r /home/ubuntu/fastube/requirements.txt
