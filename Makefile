@@ -4,4 +4,4 @@ migrate:
 
 test:
 	- pep8 .
-	- python fastube/manage.py test posts -v2
+	- python fastube/manage.py test users posts tags -v2
