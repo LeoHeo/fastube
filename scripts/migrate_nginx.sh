@@ -1,4 +1,3 @@
-#!/bin/bash
 cd /home/ubuntu/fastube
 pyenv activate fastube
 
