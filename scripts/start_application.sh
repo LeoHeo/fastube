@@ -3,10 +3,10 @@ pip freeze
 cd /home/ubuntu/fastube
 pyenv activate fastube
 
-python fastube/manage.py makemigrations users posts tags
-python fastube/manage.py migrate
+python3 fastube/manage.py makemigrations users posts tags
+python3 fastube/manage.py migrate
 
-python fastube/manage.py collectstatic --no-input
+python3 fastube/manage.py collectstatic --no-input
 
 sudo service start
 
