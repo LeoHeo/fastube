@@ -1,3 +1,4 @@
+#!/bin/bash
 # curl -L https://raw.githubusercontent.com/yyuu/pyenv-installer/master/bin/pyenv-installer | bash
 # pyenv update
 # echo 'export PATH="~/.pyenv/bin:$PATH"' >> .bash_profile
