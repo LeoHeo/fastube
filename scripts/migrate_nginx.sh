@@ -1,5 +1,6 @@
+source /home/ubuntu/.bash_profile
 cd /home/ubuntu/fastube
-pyenv activate fastube
+echo y | command 
 
 make migrate
 make collectstatic
