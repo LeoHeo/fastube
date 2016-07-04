@@ -2,12 +2,17 @@ language: python
 python:
     - "3.4"
     - "3.5"
+addons:
+    postgresql: '9.3'
 services:
     - redis-server
 install: 
     - pip install -r requirements/development.txt
+before_script:
+    - psql -c 'CREATE DATABASE fastube;' -U postgres
+    - make migrate
 script: 
     - pep8 .
-    - python fastube/manage.py test posts -v2
+    - python fastube/manage.py test users posts -v2
 notifications:
   slack: notificationslack-hjh:vkamkT4yaFFJ198M04yJeYHr
