@@ -1,3 +1,5 @@
+pip freeze
+
 make migrate
 make collectstatic
 
