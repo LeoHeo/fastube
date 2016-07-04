@@ -1,7 +1,9 @@
 pip freeze
 
-make migrate
-make collectstatic
+python3 fastube/manage.py makemigrations users posts tags
+python3 fastube/manage.py migrate
+
+python3 fastube/manage.py collectstatic --no-input
 
 sudo service start
 
