@@ -1,11 +1,12 @@
 pip freeze
 
-python /home/ubuntu/fastube/manage.py makemigrations users posts tags
-python /home/ubuntu/fastube/manage.py migrate
+cd /home/ubuntu/fastube
 
-python /home/ubuntu/fastube/manage.py collectstatic --no-input
+python fastube/manage.py makemigrations users posts tags
+python fastube/manage.py migrate
+
+python fastube/manage.py collectstatic --no-input
 
 sudo service start
 
-foreman start
 honcho start web
