@@ -2,4 +2,4 @@ sudo service nginx stop
 
 cd /home/ubuntu/fastube
 pyenv activate fastube
-pip install -r /home/ubuntu/fastube/requirements.txt
+pip3 install -r /home/ubuntu/fastube/requirements.txt
